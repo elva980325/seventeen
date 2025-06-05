@@ -1,0 +1,45 @@
+body {
+    
+    background-image: url('../img/svt-p5.webp');
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+    background-size: 100%;
+} 
+
+h1 {
+   font-size: 80px;
+}
+
+p {
+    color: rgb(8, 98, 126) 
+}
+table, th, td {
+    border:1px solid rgb(227, 240, 155);
+    border-collapse: collapse;
+    background-color: aliceblue;
+}
+* {
+     margin: 0%;
+}
+table {
+  width:100% ;
+}
+
+.footer{
+    background-color: rgb(140, 134, 156);
+    text-align: center;
+}
+.article{
+    display: flex;
+    background-color: rgb(209, 176, 201);
+    text-align: center;
+}
+.article >div {
+    width: 50%;
+}
+
+
+.banner{
+  background-color: rgb(169, 196, 231);
+  text-align: center;
+}
