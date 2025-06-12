@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <title>SEVENTEEN 介紹</title>
+  <link rel="icon" type="image/x-icon" href="img/photo (1)(1).webp" />
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      background-color: #c8e1f7; /* 粉藍色 */
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px 100px;
+      font-weight: 600;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      font-size: 3.5rem;
+      color: #1a3e72;
+      text-align: center;
+      font-weight: 900;
+      text-shadow: 2px 2px 6px rgba(26, 62, 114, 0.6);
+    }
+
+    .button-group {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    button {
+      padding: 12px 22px;
+      font-size: 1.1rem;
+      border: 2.5px solid #2f80ed;
+      border-radius: 30px;
+      background-color: white;
+      color: #2f80ed;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      min-width: 120px;
+      text-align: center;
+      font-weight: 700;
+      user-select: none;
+    }
+
+    button:hover,
+    button:focus {
+      background-color: #2f80ed;
+      color: white;
+      outline: none;
+    }
+
+    .active-button {
+      background-color: #2f80ed;
+      color: white;
+      box-shadow: 0 5px 15px rgba(47, 128, 237, 0.5);
+    }
+
+    .tab {
+      display: none;
+      max-width: 720px;
+      width: 100%;
+      text-align: center;
+      line-height: 1.7;
+      background: white;
+      padding: 25px 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .tab.active {
+      display: block;
+    }
+
+    .tab h2 {
+      margin-bottom: 25px;
+      font-size: 2.4rem;
+      color: #155295;
+      font-weight: 800;
+      text-shadow: 1px 1px 3px rgba(21, 82, 149, 0.5);
+    }
+
+    .tab img {
+      max-width: 100%;
+      border-radius: 18px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+      margin-bottom: 25px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .tab img:hover {
+      transform: scale(1.05);
+    }
+
+    .tab p {
+      font-size: 1.2rem;
+      color: #333;
+      white-space: pre-line;
+      font-weight: 600;
+    }
+
+    footer.footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #e4f0fc;
+      text-align: center;
+      padding: 15px 0;
+      border-top: 1px solid #b2d1ff;
+      font-size: 1rem;
+      color: #555;
+      font-weight: 700;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 20px 10px 120px;
+      }
+      button {
+        min-width: 90px;
+        font-size: 1rem;
+        padding: 10px 16px;
+      }
+      .tab h2 {
+        font-size: 1.8rem;
+      }
+      .tab p {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>SEVENTEEN 介紹</h1>
+
+  <div class="button-group" role="tablist" aria-label="SEVENTEEN 小分隊選擇">
+    <button role="tab" aria-selected="true" aria-controls="vocal" id="tab-vocal" class="active-button" tabindex="0" onclick="showTab('vocal')">Vocal Team</button>
+    <button role="tab" aria-selected="false" aria-controls="hiphop" id="tab-hiphop" tabindex="-1" onclick="showTab('hiphop')">Hip-hop Team</button>
+    <button role="tab" aria-selected="false" aria-controls="performance" id="tab-performance" tabindex="-1" onclick="showTab('performance')">Performance Team</button>
+    <button role="tab" aria-selected="false" aria-controls="full" id="tab-full" tabindex="-1" onclick="showTab('full')">完整體</button>
+  </div>
+  <div id="hiphop" class="tab" role="tabpanel" aria-labelledby="tab-hiphop" tabindex="0">
+    <h2>Vocal Team </h2>
+    <a href="img/svt vo.png" target="_blank" rel="noopener noreferrer" aria-label="打開Vocal Team  成員大圖">
+      <img src="img/svt vo.png" alt="SEVENTEEN Vocal Team  成員合照" />
+    </a>
+    <p>
+      Vocal Team 以主唱為主，包含 Woozi、Jeonghan、Joshua、DK、Seungkwan。
+      <br><strong>Woozi (李知勳)：</strong> Vocal Team 的隊長，擅長作曲與編曲，是 SEVENTEEN 音樂的核心創作者之一，雖身材嬌小但實力驚人。
+      <br><strong>Jeonghan (尹淨漢)：</strong> 以柔和嗓音和清秀外貌著稱，性格溫柔又帶點調皮，是團體中的氣氛製造者與人氣成員。
+      <br><strong>Joshua（洪知秀）：</strong> 美國出生的韓裔成員，英文流利，聲音溫暖細膩，是隊內重要的和聲擔當與溫柔代表。
+      <br><strong>DK（李碩珉）：</strong> 擁有爆發力十足的高音與舞台魅力，是主唱之一，性格開朗幽默，是團隊的開心果。
+      <br><strong>Seungkwan（夫勝寬）：</strong> 歌唱與綜藝實力兼具，以強大聲線和反應力著稱，常出現在各大綜藝節目，是人氣與實力並存的成員。
+    </p>
+  </div>
+
+  <div id="hiphop" class="tab" role="tabpanel" aria-labelledby="tab-hiphop" tabindex="0">
+    <h2>Hip-hop Team</h2>
+    <a href="img/SEVENTEEN_HipHop.webp" target="_blank" rel="noopener noreferrer" aria-label="打開Hip-hop Team 成員大圖">
+      <img src="img/SEVENTEEN_HipHop.webp" alt="SEVENTEEN Hip-hop Team 成員合照" />
+    </a>
+    <p>
+      Hip-hop Team 擅長 Rap，由成員 S.cops（隊長）、Wonwoo、Mingyu 和 Vernon 組成。
+      這個小分隊專注於饒舌和嘻哈音樂創作，展現成員們獨特的聲線與節奏感。
+      Hip-hop Team 的作品常融合深刻歌詞與強烈節奏，展現真實情感與態度。他們不僅參與歌曲創作，更在舞台上展現鮮明的個人魅力與團隊默契，是 SEVENTEEN 音樂風格的重要支柱之一。
+      <br><strong>S.cops(崔勝晢)：</strong> 以穩重可靠的形象深受團員與粉絲信賴。他擁有出色的Rap實力與舞台掌控力，能在舞台上展現強烈的氣場，同時在私下則展現溫柔體貼的一面，常照顧團員、營造良好的團隊氛圍。作為隊長，他具有高度責任感與領導力，能平衡十三人團體的多元性格，是SEVENTEEN穩固運作的關鍵人物之一。
+      <br><strong>Wonwoo(全圓佑)：</strong> 以低沉有磁性的嗓音和穩定的Rap節奏著稱，舞台表現冷靜自信，展現獨特魅力。他個性內向安靜，喜愛閱讀與攝影，展現文藝氣息，與外冷內暖的形象形成對比。
+      <br><strong>Mingyu（金珉奎）：</strong> 以其陽光開朗的個性、幽默感和積極的態度深受粉絲喜愛。Mingyu的多才多藝和真誠待人，使他在SEVENTEEN中扮演著不可或缺的角色，並在音樂、時尚和娛樂領域持續發光發熱。
+      <br><strong>Vernon（崔瀚率）：</strong> 出生於美國紐約，Rap風格和穩定的舞台表現力深受粉絲喜愛。此外，Vernon也參與了多首歌曲的創作，展現其音樂才華。在時尚領域，Vernon於2023年被任命為法國奢侈品牌Kenzo的全球大使，並參與了品牌的廣告宣傳和時裝秀。
+    </p>
+  </div>
+
+  <div id="performance" class="tab" role="tabpanel" aria-labelledby="tab-performance" tabindex="0">
+    <h2>Performance Team</h2>
+    <a href="img/Performance_Team_Face_the_Sun_ep.5_.webp" target="_blank" rel="noopener noreferrer" aria-label="打開Performance Team 成員大圖">
+      <img src="img/Performance_Team_Face_the_Sun_ep.5_.webp" alt="SEVENTEEN Performance Team 成員合照" />
+    </a>
+    <p>
+      Performance Team 由成員 Hoshi、Jun、The8、Dino 組成，專注於舞蹈與舞台表現。
+      <br><strong>Hoshi（許敏赫）：</strong> 以精湛舞技與舞台感染力著稱，是Performance Team的隊長和主舞，負責編舞和領導舞蹈練習。
+      <br><strong>Jun（文俊輝）：</strong> 中國成員，舞蹈實力強大，具備柔韌且優雅的舞姿，舞台表現細膩。
+      <br><strong>The8（徐明浩）：</strong> 另一位中國成員，以精準有力的舞蹈風格聞名，並且具備音樂創作與設計才華。
+      <br><strong>Dino（崔振赫）：</strong> 年紀最小的成員，舞蹈爆發力強，舞台魅力十足，是團隊中重要的舞蹈擔當。
+    </p>
+  </div>
+
+  <div id="full" class="tab" role="tabpanel" aria-labelledby="tab-full" tabindex="0">
+    <h2>完整體</h2>
+    <a href="img/seventeen精選專.jpg" target="_blank" rel="noopener noreferrer" aria-label="打開SEVENTEEN完整體大圖">
+      <img src="img/seventeen精選專.jpg" alt="seventeen精選專.jpg" />
+    </a>
+    <p>
+      SEVENTEEN 是一個由 13 位成員組成的韓國男子團體，包含三個小分隊：Vocal Team、Hip-hop Team 與 Performance Team。團體在音樂製作、舞蹈編排、演唱及創作上均有高度參與，獲得廣大粉絲喜愛。
+      <br>成員包括：S.cops（隊長）、Woozi、Jeonghan、Joshua、Jun、Hoshi、Wonwoo、Woozi、DK、Mingyu、The8、Seungkwan、Vernon、Dino。
+      <br>他們風格多元，從柔美抒情到強烈動感，兼具團隊默契和個人特色，持續在國際舞台上發光發熱。
+      <br>SEVENTEEN，不只是韓國頂尖的男子團體，更像是一群用心編織夢想與汗水的年輕人。他們自2015年出道以來，以無數熬夜練習的日子和彼此間深厚的情誼，創造出屬於自己的音樂故事。每一首歌、每一次舞蹈，都承載著他們對夢想的執著與對粉絲的感謝。團員們不僅是舞台上的耀眼明星，更是彼此生命中最真誠的支持者。SEVENTEEN用音樂連結你我，用真心感動世界，讓每個聽見他們歌聲的人，都能感受到那份溫暖與力量。他們的故事，告訴我們夢想不會辜負努力，只要相信自己，就能創造奇蹟。
+    </p>
+  </div>
+
+  <footer class="footer">
+    Copyright © 2023 kylelu All Rights Reserved.
+  </footer>
+
+  <script>
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll('.tab');
+      const buttons = document.querySelectorAll('.button-group button');
+
+      tabs.forEach(tab => {
+        tab.classList.toggle('active', tab.id === tabId);
+      });
+
+      buttons.forEach(button => {
+        const isActive = button.getAttribute('aria-controls') === tabId;
+        button.classList.toggle('active-button', isActive);
+        button.setAttribute('aria-selected', isActive);
+        button.tabIndex = isActive ? 0 : -1;
+      });
+    }
+  </script>
+</body>
+</html>
+
